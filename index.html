@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Blendsss</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-6" id="head">
+             <h1 style="color: black;">BLE</h><h1 style="color: cornflowerblue;">NDS</h1>
+             <p style="font-size:xx-large;"  ><br>&nbsp;&nbsp;&nbsp;&nbsp; Blend anything</p>
+          </div> 
+          <nav class="navbar navbar-expand-sm bg-light">
+             <ul class="nav">
+              <li class="nav-item">
+                <a href="" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Products</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <button class="open-button" onclick="openForm()">Login</button>
+              </li>
+             </ul>
+        </div>
+    </div>
+    <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h1>Login</h1>
+    
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+    
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+    
+    <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+<!--slider started from here --> 
+ <div class="wrap">
+      <div class="arrow" id="left-arrow"></div>
+      <div id="slider">
+           <div class="slide slide1" style="background-image: url(css/0.jpg);">
+               <div class="slide-content">
+               </div>
+           </div>
+           <div class="slide slide2" style="background-image: url(css/1.jpg);">
+               <div class="slide-content">
+                
+               </div>
+            </div>
+            <div class="slide slide3" style="background-image: url(css/3.jpg);">
+               <div class="slide-content">
+               
+               </div>
+            </div>
+           <div class="slide slide4" style="background-image: url(css/4.jpg);">
+               <div class="slide-content">
+                
+               </div>
+            </div>
+           <div class="slide slide5" style="background-image: url(css/2.jpg);">
+               <div class="slide-content">
+                
+               </div>
+            </div>
+        </div>
+      </div>
+      <div class="arrow" id="right-arrow"></div>
+ </div> 
+     
+     <div class="container2" style="background-color: white; padding-top: 30px;padding-bottom: 30px;">
+       <h3><b>You become about as exciting as your food blender</b></h3>
+       <h2><i><b> The kids come in look you in the eye, and ask if anybody's home.</b></i></h2>
+     </div>
+     <section class="gallery min-vh-100">
+		 <div class="container-lg">
+			<div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+				<div class="col">
+					<img src="css/10.jpg" class="gallery-item" alt="Gallery1">
+				</div>
+
+				<div class="col">
+					<img src="css/11.jpg" class="gallery-item" alt="Gallery2">
+				</div>
+
+				<div class="col">
+					<img src="css/12.jpg" class="gallery-item" alt="Gallery3">
+				</div>
+
+				<div class="col">
+					<img src="css/13.jpg" class="gallery-item" alt="Gallery4">
+				</div>
+
+				<div class="col">
+					<img src="css/14.jpg" class="gallery-item" alt="Gallery5">
+				</div>
+
+				<div class="col">
+					<img src="css/15.jpg" class="gallery-item" alt="Gallery6">
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- Modal -->
+<div class="modal fade" id="gallery-popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="css/10.jpg" class="modal-img" alt="Modal Image">
+      </div>
+    </div>
+  </div>
+</div>
+
+ <script src="js/bootstrap.bundle.min.js"></script>
+
+	<script type="text/javascript">
+		document.addEventListener("click",function (e){
+		  if(e.target.classList.contains("gallery-item")){
+		  	  const src = e.target.getAttribute("src");
+		  	  document.querySelector(".modal-img").src = src;
+		  	  const myModal = new bootstrap.Modal(document.getElementById('gallery-popup'));
+		  	  myModal.show();
+		  }
+		})
+	</script>
+    <div class="section">
+       <div class="container3"> 
+          <div class="title">
+             <h1>About-Product</h1>
+          </div>
+          <div class="content">
+              <div class="article">
+                <h3>A blender is a kitchen and laboratory appliance used to mix, purée, or emulsify food and other substances. A stationary blender consists of a blender jar with a rotating metal blade, powered by an electric motor in the base. The newer immersion blender configuration has a motor on top connected by a shaft to a rotating blade at the bottom, which can be used with any container. Cartgo provides best kitchen appliances .So, Upgrade your lifestyle with our range of best-in-class kitchen appliances. Our products are meticulously designed and engineered for superior performance, space-saving design, energy efficiency, added convenience, and full value for your money.
+                </h3>
+                    <p>A blender consists of a housing, motor, blades, and food container. A fan-cooled electric motor is secured into the housing by way of vibration dampers, and a small output shaft penetrates the upper housing and meshes with the blade assembly. Usually, a small rubber washer provides a seal around the output shaft to prevent liquid from entering the motor. Most blenders today have multiple speeds.</p>
+              </div>
+          </div>
+          <div class="image-section">
+              <img src="css/000000.jpg">
+          </div> 
+       </div>
+    </div>
+    <div class="container5">
+      <h1 style="text-align: center;">Contact Us</h1>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-snapchat-ghost"></a>
+      <a href="#" class="fa fa-google"></a>
+    </div>
+</body>
+</html>
